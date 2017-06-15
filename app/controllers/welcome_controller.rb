@@ -8,4 +8,7 @@ class WelcomeController < ApplicationController
     response = RestClient.get 'https://api.ethexindia.com/trades/'
     @trades = JSON.parse(response.body)
   end
+
+  def widget
+  end
 end
